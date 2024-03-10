@@ -27,7 +27,7 @@ body {
 .hlavicka {
   width: 300px;
   background-color: #31363b;
-  color: whitesmoke;
+  position: relative;
 }
 
 .obsah {
@@ -37,21 +37,64 @@ body {
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+  color: lightgrey;
 }
 
 .jmeno {
   font-family: "Montserrat", sans-serif;
-  font-weight: 700;
+  font-weight: bold;
+  font-size: 28px;
+  color: whitesmoke;
 }
 
 .odkazy {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
   text-transform: uppercase;
-  text-decoration: none;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .logo {
   background-color: #b92e81;
   border-radius: 50%;
+  position: fixed;
+  top: 180px;
+  left: 220px;
+  z-index: 1;
+  box-shadow: 1px 3px 3px black;
+}
+
+a {
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+  text-align: center;
+  color: lightgrey;
+  padding: 10px;
+  display: block;
+}
+
+.portfolio {
+  width: 300px;
+  border-color: #3f464d;
+  border-style: solid;
+  border-width: thin;
+}
+
+.facebook,
+.twitter {
+  width: 49.1%;
+  display: inline-block;
+  border-left: #3f464d solid thin;
+}
+
+.portfolio :hover {
+  background-color: #e74c3c;
+}
+
+.facebook :hover {
+  background-color: #3b5998;
+}
+
+.twitter :hover {
+  background-color: #1da1f2;
 }
